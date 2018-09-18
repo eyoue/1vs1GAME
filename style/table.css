@@ -1,0 +1,100 @@
+ 
+ *{
+  box-sizing: border-box;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.d-table{
+  display: table;
+  width: 50%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+.d-tr{
+  display: table-row;
+}
+.d-td{
+  display: table-cell;
+  text-align: center;
+  border: none;
+
+  vertical-align: middle;
+}
+.d-td:not(.no-p){
+  padding: 4px;
+}
+
+#main, #mainFind{
+  background-image: url('../images/bg.png');
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 300px;
+}
+
+#leftW, #rightW{
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+#bottomW{
+  position: relative;
+  overflow: hidden;
+  height: 225px;
+}
+
+#startBtn{
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+}
+
+body{
+  color: white;
+}
+
+label {
+ width: 100px; /* ШИРИНА РИСУНКА */
+ height: 100px; /* ВЫСОТА РИСУНКА */
+ display: block; /* БЛОЧНЫЙ ЭЛЕМЕНТ */
+ position: relative; /* ОТНОСИТЕЛЬНОЕ ПОЗИЦИОНИРОВАНИЕ */
+}
+
+input[type="checkbox"].def + span {
+ position: absolute; /* АБСОЛЮТНОЕ ПОЗИЦИОНИРОВАНИЕ */
+ left: 33%; 
+ top: -5%;
+ width: 100%; 
+ height: 100%;
+ background: url(../images/defOff.png) no-repeat; /* ФОНОВЫЙ РИСУНОК */
+ background-size: 30px 35px;
+ cursor: pointer; /* КУРСОР В ВИДЕ РУКИ */
+}
+
+input[type="checkbox"]{
+display: none;
+}
+
+
+input[type="checkbox"].def:checked + span  	{
+ background: url(../images/defOn.png) no-repeat; /* ФОНОВЫЙ РИСУНОК */
+ background-size: 35px 40px;
+ left: 30%;
+}
+
+input[type="checkbox"].attac + span {
+ position: absolute; /* АБСОЛЮТНОЕ ПОЗИЦИОНИРОВАНИЕ */
+ left: 20%; 
+ top: -5%;
+ width: 100%; 
+ height: 100%;
+ background: url(../images/attacOff.png) no-repeat; /* ФОНОВЫЙ РИСУНОК */
+ background-size: 50px 35px;
+ cursor: pointer; /* КУРСОР В ВИДЕ РУКИ */
+}
+
+input[type="checkbox"].attac:checked + span  	{
+ background: url(../images/attacOn.png) no-repeat; /* ФОНОВЫЙ РИСУНОК */
+ background-size: 55px 40px;
+ left: 18%;
+}
