@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="js/findGame.js"></script>
+<link rel="stylesheet" type="text/css" href="style/table.css">
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <div class="d-table" id="mainFind">
+        <div class="d-tr">
+            <div class="d-td" id="bottomW" style="float: right; width: 80%; top: 0; right: 10%; height: 533px">
+
+                <img src="images/find.png" style="float: left; width: 98%; position: absolute; left: 1%; top: 10%">
+
+                <div id="btn" onclick="startGame()" style="cursor: pointer;">
+                    <img id="btnFindStart" src="images/btnFindOff.png" style="float: right; width: 80%; position: absolute; right: 10%; bottom: 60%">
+
+                    <span id="btnSpan" style="text-align: center; float: right; width: 80%; position: absolute; right: 10%; bottom: 63%">Играть</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-table" id="main" style="display: none;">
+        <div class="d-tr">
+            <div class="d-td">
+
+                <div class="d-td" id="leftW" style="float: left; width: 50%; top: 0;">
+                    <img src="images/leftWindow.png" style="width: 100%; position: absolute; height: auto; left: 0; top: 0">
+                    <div class="d-td" style="float: left; width: 82%; position: absolute; left: 33.5%; top: 9%">
+                        <img src="images/health.png" id="hpR" style="float: left; width: 50%;">
+                    </div>
+
+                    <div class="d-td" id="leftChar" style="float: left; width: 100%;">
+                        <img src="images/girl.png" style="float: left; width: 80%; position: absolute; left: 10%; top: 20%">
+
+                        <div class="d-td" style="float: left; width: 80%; position: absolute; left: 10%; top: 22%">
+                            <label><input class="def" onclick="hod(this)" type="checkbox" value="1" name="k"><span></span></label>
+                        </div>
+                        <div class="d-td" style="float: left; width: 80%; position: absolute; left: 10%; top: 34%">
+                            <label><input class="def" onclick="hod(this)" type="checkbox" value="2" name="k"><span></span></label>
+                        </div>
+                        <div class="d-td" style="float: left; width: 80%; position: absolute; left: 10%; top: 46%">
+                            <label><input class="def" onclick="hod(this)" type="checkbox" value="3" name="k"><span></span></label>
+                        </div>
+                        <div class="d-td" style="float: left; width: 80%; position: absolute; left: 10%; top: 64%">
+                            <label><input class="def" onclick="hod(this)" type="checkbox" value="4" name="k"><span></span></label>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="d-td" id="rightW" style="float: right; width: 50%; top: 0;">
+                    <img src="images/rightWindow.png" style="width: 100%; position: absolute; height: auto; right: 0; top: 0">
+                    <div class="d-td" style="float: right; width: 82%; position: absolute; right: 33.5%; top: 9%">
+                        <img src="images/health.png" id="hpL" style="float: right; width: 50%; transform: scale(-1, 1)">
+                    </div>
+
+                    <div class="d-td" id="rightChar" style="float: right; width: 100%;">
+                        <img src="images/boy.png" style="float: right; width: 80%; position: absolute; right: 10%; top: 20%">
+
+                        <div class="d-td" style="float: right; width: 80%; position: absolute; right: 10%; top: 22%">
+                            <label><input class="attac" onclick="hod(this)" type="checkbox" value="1" name="k"><span></span></label>
+                        </div>
+                        <div class="d-td" style="float: right; width: 80%; position: absolute; right: 10%; top: 34%">
+                            <label><input class="attac" onclick="hod(this)" type="checkbox" value="2" name="k"><span></span></label>
+                        </div>
+                        <div class="d-td" style="float: right; width: 80%; position: absolute; right: 10%; top: 46%">
+                            <label><input class="attac" onclick="hod(this)" type="checkbox" value="3" name="k"><span></span></label>
+                        </div>
+                        <div class="d-td" style="float: right; width: 80%; position: absolute; right: 10%; top: 64%">
+                            <label><input class="attac" onclick="hod(this)" type="checkbox" value="4" name="k"><span></span></label>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="d-td" id="bottomW" style="float: right; width: 100%; top: 0;">
+            <div class="seconds">10</div>
+            <img src="images/bottomWindow.png" style="float: left; width: 98%; position: absolute; left: 1%;">
+            <img id="btnStart" src="images/btnOff.png" style="float: right; width: 20%; position: absolute; right: 40%; bottom: 5px">
+        </div>
+    </div>
+</body>
+
+</html>
